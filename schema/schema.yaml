@@ -1,0 +1,80 @@
+schema:
+  format:
+    openapi: "3.0.0"
+  environment_input_type: "PublicEnvironmentInput"
+  types:
+    PublicEnvironmentInput:
+      type: object
+      description: "Input properties for the environment"
+      properties:
+        glueworkflow_name:
+          type: string
+          description: "the glue job name"
+          default: "workflow_mpl_dev_delta"
+
+        iam_role:
+          type: string
+          description: "the glue job name"
+          default: "arn:aws:iam::031342435657:role/gluerole"
+
+        job1:
+          type: string
+          description: "the glue job name"
+          default: "caspian_mpl_dev_delta_parquet_transformation"
+
+        job2:
+          type: string
+          description: "the glue job name"
+          default: "caspian_mpl_dev_delta_analysis_hfitohfs"
+
+        job3:
+           type: string
+           description: "the glue job name"
+           default: "caspian_mpl_dev_delta_analysis_originations"
+
+        job4:
+           type: string
+           description: "the glue job name"
+           default: "caspian_mpl_dev_delta_analysis_servicing"
+
+        job5:
+           type: string
+           description: "the glue job name"
+           default: "caspian_mpl_dev_delta_analysis_mpl_monthly_serv_intermediate"
+
+
+        job6:
+           type: string
+           description: "the glue job name"
+           default: "caspian_mpl_dev_delta_analysis_mpl_loan_sales"
+
+        job7:
+           type: string
+           description: "the glue job name"
+           default: "caspian_mpl_dev_delta_analysis_mpl_monthly_serv"
+
+        trigger1:
+            type: string
+            description: "the glue trigger name" 
+            default: "trigger_mpl_dev_delta_parquet_transformation"
+
+        trigger2:
+            type: string
+            description: "the glue trigger name" 
+            default: "trigger_mpl_dev_delta_views"
+
+        trigger3:
+            type: string
+            description: "the glue trigger name" 
+            default: "trigger_mpl_dev_delta_analysis_mpl_monthly_serv_intermediate"
+
+        trigger4:
+            type: string
+            description: "the glue trigger name" 
+            default: "trigger_mpl_dev_delta_analysis_mpl_loan_sales"
+
+
+        trigger5:
+            type: string
+            description: "the glue trigger name" 
+            default: "trigger_mpl_dev_delta_analysis_mpl_monthly_serv"
