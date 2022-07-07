@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:   
+    commands:
+      - echo intsalling the phase 
+  pre_build:
+    commands:
+      - echo executing build stage1
+  build:
+    commands:
+      - echo Build started on `date`
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - 'proton.tar.gz'
