@@ -1,5 +1,0 @@
-infrastructure:
-  templates:
-    - file: "caspian.yaml"
-      rendering_engine: jinja
-      template_language: cloudformation
